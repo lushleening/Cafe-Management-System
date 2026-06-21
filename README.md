@@ -21,7 +21,7 @@ A desktop-based Cafe Management System developed using JavaFX and MySQL. The app
 <img width="1099" height="600" alt="image" src="https://github.com/user-attachments/assets/07b59f8b-9cd6-4b82-a9d7-46df6ded13b5" />
 
 ### Inventory & Menu Management
-<img width="1098" height="598" alt="image" src="https://github.com/user-attachments/assets/1727c095-a5fd-44c3-9759-87a9d6be4767" />
+<img width="1098" height="601" alt="image" src="https://github.com/user-attachments/assets/334ea94d-fe52-4b2f-9f0d-7897404cb2a7" />
 
 * Add inventory items
 * Update inventory information
