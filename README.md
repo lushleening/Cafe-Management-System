@@ -35,6 +35,16 @@ A desktop-based Cafe Management System developed using JavaFX and MySQL. The app
 * Add and update menu entries
 * Store menu information in a MySQL database
 
+### User Functions
+<img width="1100" height="595" alt="image" src="https://github.com/user-attachments/assets/dc3dbab0-cab6-470e-acb2-c363dc624f80" />
+
+<img width="395" height="599" alt="image" src="https://github.com/user-attachments/assets/04282643-1dc5-4371-ac63-882ca377e305" />
+
+- Add menu items to customer orders
+- Generate receipts for completed transactions
+- View available menu items
+- Process customer purchases through a simplified interface
+
 ### Database Integration
 
 * Persistent data storage using MySQL
