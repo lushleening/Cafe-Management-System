@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/Login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw1.Controllers.SignUpController">
+   <AnchorPane prefHeight="457.0" prefWidth="201.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+           <Text layoutX="77.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="login_logo_container" text="Cafe">
+            <font>
+               <Font size="35.0" />
+            </font>
+         </Text>
+         <Label id="choice-prompt-text" layoutX="31.0" layoutY="281.0" text="Create Account" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Button fx:id="newAcc_btn" layoutX="14.0" layoutY="320.0" mnemonicParsing="false" onAction="#switchAcc" styleClass="newacc_container" text="Account Already Exists">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Button>
+      </children>
+   </AnchorPane>
+   <AnchorPane layoutX="229.60000610351562" layoutY="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <children>
+         <AnchorPane prefHeight="357.0" prefWidth="354.0" styleClass="login_form_container">
+            <children>
+                 <Label id="choice-prompt-text" layoutY="50.0" text="Choose Your Account Type" />
+                 <ChoiceBox fx:id="acc_selector" layoutY="71.0" prefWidth="150.0" styleClass="account_selector" />
+                 <Label fx:id="username_lbl" layoutY="106.0" styleClass="login_form_container" text="Username" />
+                 <TextField fx:id="username_fld" layoutY="125.0" prefHeight="32.0" prefWidth="356.0" promptText="Enter New Username" styleClass="input_field" />
+                 <Label layoutY="163.0" text="Password" />
+                 <Label fx:id="error_lbl" alignment="CENTER" layoutX="1.0" layoutY="261.0" prefHeight="19.0" prefWidth="353.0" styleClass="error_label" />
+                 <Button fx:id="register_btn" layoutX="3.0" layoutY="287.0" mnemonicParsing="false" onAction="#registerButtonClicked" text="Register" />
+               <Button fx:id="cancel_btn" layoutX="3.0" layoutY="328.0" mnemonicParsing="false" onAction="#cancel_btnOnAction" text="Cancel" />
+               <Label alignment="CENTER" layoutX="88.0" layoutY="-20.0" prefHeight="36.0" prefWidth="187.0" styleClass="head-label" text="Register Account" textFill="WHITE">
+                  <font>
+                     <Font size="59.0" />
+                  </font>
+               </Label>
+               <PasswordField fx:id="password_fld" layoutX="1.0" layoutY="184.0" prefHeight="32.0" prefWidth="356.0" promptText="Enter New Password" styleClass="input_field" />
+               <PasswordField fx:id="password_fld1" layoutX="1.0" layoutY="223.0" prefHeight="32.0" prefWidth="356.0" promptText="Confirm Password" styleClass="input_field" />
+               <Label fx:id="password_label" alignment="CENTER" layoutX="78.0" layoutY="163.0" prefHeight="19.0" prefWidth="268.0" styleClass="error_label" />
+               <Label fx:id="success_msg" alignment="CENTER" layoutX="5.0" layoutY="24.0" prefHeight="19.0" prefWidth="353.0" styleClass="error_label" />
+               <Label fx:id="username_constraint" alignment="CENTER" layoutX="66.0" layoutY="106.0" prefHeight="19.0" prefWidth="290.0" styleClass="error_label" text="*letters and numbers only (length: 5-10 )">
+                  <font>
+                     <Font size="1.0" />
+                  </font>
+               </Label>
+            </children>
+         </AnchorPane>
+      </children>
+   </AnchorPane>
+</AnchorPane>

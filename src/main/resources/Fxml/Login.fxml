@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/Login.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.cw1.Controllers.LoginController">
+   <AnchorPane prefHeight="457.0" prefWidth="201.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+           <Text layoutX="77.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="login_logo_container" text="Cafe">
+            <font>
+               <Font size="35.0" />
+            </font>
+         </Text>
+         <Label id="choice-prompt-text" layoutX="31.0" layoutY="281.0" text="Create Account" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Button fx:id="newAcc_btn" layoutX="21.0" layoutY="320.0" mnemonicParsing="false" onAction="#switchToSignUp" styleClass="newacc_container" text="Create New Account">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Button>
+      </children>
+   </AnchorPane>
+   <AnchorPane layoutX="229.60000610351562" layoutY="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <children>
+         <AnchorPane prefHeight="357.0" prefWidth="354.0" styleClass="login_form_container">
+            <children>
+                 <Label id="choice-prompt-text" layoutX="-2.0" layoutY="88.0" text="Choose Your Account Type" />
+                 <ChoiceBox fx:id="acc_selector" layoutY="109.0" prefWidth="150.0" styleClass="account_selector" />
+                 <Label fx:id="username_lbl" layoutX="-2.0" layoutY="142.0" styleClass="login_form_container" text="Username" />
+                 <TextField fx:id="username_fld" layoutY="163.0" prefHeight="32.0" prefWidth="356.0" promptText="Username" styleClass="input_field" />
+                 <Label layoutY="195.0" text="Password" />
+                 <Label fx:id="error_lbl" alignment="CENTER" layoutX="1.0" layoutY="256.0" prefHeight="19.0" prefWidth="353.0" styleClass="error_label" />
+                 <Button fx:id="login_btn" layoutX="3.0" layoutY="287.0" mnemonicParsing="false" onAction="#login_btn_action" text="Login" />
+               <Button fx:id="cancel_btn" layoutX="3.0" layoutY="328.0" mnemonicParsing="false" onAction="#cancel_btnOnAction" text="Cancel" />
+               <Label alignment="CENTER" layoutX="88.0" layoutY="-20.0" prefHeight="36.0" prefWidth="187.0" styleClass="head-label" text="Login Account" textFill="WHITE">
+                  <font>
+                     <Font size="59.0" />
+                  </font>
+               </Label>
+               <PasswordField fx:id="password_fld" layoutY="214.0" prefHeight="32.0" prefWidth="356.0" promptText="Password" styleClass="input_field" />
+            </children>
+         </AnchorPane>
+      </children>
+   </AnchorPane>
+</AnchorPane>

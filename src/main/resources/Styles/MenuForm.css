@@ -1,0 +1,45 @@
+.header {
+    -fx-background-color: #132A13;
+    -fx-border-color: white;
+    -fx-border-width: 0 0 .8px 0;
+}
+
+/* Logo container styles */
+.nav_form {
+    -fx-background-color: #132A13;
+}
+
+.text {
+    -fx-font-size: 15px;
+    -fx-fill: white;
+}
+
+.nav_button {
+    -fx-background-color: #5b5b5b;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 1.2em;
+}
+
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,5), 5,0,0,0);
+}
+
+.white-bg {
+    -fx-background-color: white;
+}
+
+.radius {
+    -fx-background-radius: 8px;
+}
+
+
+.transparent {
+    -fx-background-color: transparent;
+}
+
+.text1 {
+    -fx-background-color: black;
+}

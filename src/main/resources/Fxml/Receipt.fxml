@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw1.ReceiptController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="580.0" prefWidth="380.0" spacing="15.0">
+            <children>
+                <Label text="Lush Cafe Receipt" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="receipt_dateTimeLabel" text="Date: 01/01/2025 12:00 PM" />
+                <Label fx:id="receipt_customerIDLabel" text="Customer ID: 12345" />
+                <Label text="Items Purchased:" />
+                <TableView fx:id="receipt_tableView" prefHeight="300.0" prefWidth="380.0">
+                    <columns>
+                        <TableColumn fx:id="receipt_col_productName" prefWidth="180.0" text="Product" />
+                        <TableColumn fx:id="receipt_col_quantity" prefWidth="80.0" text="Quantity" />
+                        <TableColumn fx:id="receipt_col_price" prefWidth="120.0" text="Price" />
+                    </columns>
+                </TableView>
+                <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="380.0" spacing="15.0">
+                    <children>
+                        <Label text="Subtotal:" />
+                        <Label fx:id="receipt_subtotalLabel" text="" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="380.0" spacing="15.0">
+                    <children>
+                        <Label text="Amount Paid:" />
+                        <Label fx:id="receipt_amountPaidLabel" text="" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="380.0" spacing="15.0">
+                    <children>
+                        <Label text="Change:" />
+                        <Label fx:id="receipt_changeLabel" text="" />
+                    </children>
+                </HBox>
+                <Label text="Thank you for your order!" textAlignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="receipt_closeBtn" mnemonicParsing="false" onAction="#closeReceipt" prefHeight="30.0" prefWidth="100.0" text="Close" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+.header {
+    -fx-background-color: #132A13;
+    -fx-border-color: white;
+    -fx-border-width: 0 0 .8px 0;
+}
+
+/* Logo container styles */
+.nav_form {
+    -fx-background-color: #132A13;
+}
+
+
+.nav_button {
+    -fx-background-color: #5b5b5b;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 1.2em;
+}
+
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,5), 5,0,0,0);
+}
+
+.white-bg {
+    -fx-background-color: white;
+}
+
+.radius {
+    -fx-background-radius: 8px;
+}
+
+
+.transparent {
+    -fx-background-color: transparent;
+}
+
+.text1 {
+    -fx-background-color: black;
+}
+
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: #132A13 ;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #132A13;
+    -fx-background-insets: 0 0 0 0;
+
+}
+
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+.btn {
+    -fx-background-color: #132A13;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+}
+
+.combo-box{
+    -fx-background-color: #ECF39E;
+}
