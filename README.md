@@ -15,26 +15,25 @@ A desktop-based Cafe Management System developed using JavaFX and MySQL. The app
 ## Screenshots
 
 ### Login Screen
-![Login Screen] (<img width="597" height="395" alt="image" src="https://github.com/user-attachments/assets/09cf3587-e25c-40f1-8a52-b9f77d058911" />)
+<img width="597" height="395" alt="image" src="https://github.com/user-attachments/assets/09cf3587-e25c-40f1-8a52-b9f77d058911" />
 
+### Dashboard
+<img width="1099" height="600" alt="image" src="https://github.com/user-attachments/assets/07b59f8b-9cd6-4b82-a9d7-46df6ded13b5" />
 
-### Inventory Management
+### Inventory & Menu Management
+<img width="1098" height="598" alt="image" src="https://github.com/user-attachments/assets/1727c095-a5fd-44c3-9759-87a9d6be4767" />
 
 * Add inventory items
 * Update inventory information
 * Delete inventory records
 * View available stock
 
-### Menu Management
+* Import and display images within the application
+* Associate images with relevant records
 
 * Manage cafe menu items
 * Add and update menu entries
 * Store menu information in a MySQL database
-
-### Image Management
-
-* Import and display images within the application
-* Associate images with relevant records
 
 ### Database Integration
 
